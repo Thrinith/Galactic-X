@@ -59,16 +59,48 @@ def galaxy_cluster_analysis():
     col1, col2, col3, col4 = st.columns(4)
 
     with col2:
-        ra = st.text_input("Right Ascension (RA)")
-        dec = st.text_input("Declination (DEC)")
-        u_mag = st.text_input("u band magnitude")
-        g_mag = st.text_input("g band magnitude")
+        ra = st.text_input(
+            "Right Ascension (RA)",
+            placeholder="Enter the RA (Right Ascension):",
+            help="Like the longitude in the sky, helping us find how far a galaxy is located along the celestial sphere from a starting point. It tells us where the galaxy is in terms of east-west direction in the sky.",
+        )
+        dec = st.text_input(
+            "Declination (DEC)",
+            placeholder="Enter the DEC (Declination):",
+            help="Like the latitude, but for the sky. It measures how far a galaxy is above or below the celestial equator. Together with RA, it helps pinpoint the exact location of a galaxy in the sky.",
+        )
+        u_mag = st.text_input(
+            "u band magnitude",
+            placeholder="Enter the u band magnitude:",
+            help="Measures how bright the galaxy is in ultraviolet light.",
+        )
+        g_mag = st.text_input(
+            "g band magnitude",
+            placeholder="Enter the g band magnitude:",
+            help="Measures the galaxy’s brightness in blue-green light.",
+        )
 
     with col3:
-        r_mag = st.text_input("r band magnitude")
-        i_mag = st.text_input("i band magnitude")
-        z_mag = st.text_input("z band magnitude")
-        redshift = st.text_input("Redshift")
+        r_mag = st.text_input(
+            "r band magnitude",
+            placeholder="Enter the r band magnitude:",
+            help="Measures how bright the galaxy appears in redder light.",
+        )
+        i_mag = st.text_input(
+            "i band magnitude",
+            placeholder="Enter the i band magnitude:",
+            help="Measures the brightness of the galaxy in near-infrared light.",
+        )
+        z_mag = st.text_input(
+            "z band magnitude",
+            placeholder="Enter the z band magnitude:",
+            help="Measures how bright the galaxy is in deeper red or near-infrared light.",
+        )
+        redshift = st.text_input(
+            "Redshift",
+            placeholder="Enter the Redshift Value:",
+            help="Measures the change in the wavelength of light from a celestial object as it moves relative to the observer.",
+        )
 
     c1, c2, c3, c4, c5, c6, c7, c8, c9 = st.columns(9)
 

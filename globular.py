@@ -75,18 +75,22 @@ def globular_cluster_analysis():
         CI5_g = st.text_input(
             "Concentration Index CI5_g",
             placeholder="Light concentration in the g-band for the fifth index point.",
+            help="CI5_g (Concentration Index in the g-band): This parameter compares the brightness of a globular cluster between a 5-pixel circle and a smaller 1-pixel circle, using bluish-green light (g-band). It helps us understand how the light is distributed across a slightly larger area, providing more detail about the cluster's structure.",
         )
         CI5_z = st.text_input(
             "Concentration Index CI5_z",
             placeholder="Light concentration in the z-band for the fifth index point.",
+            help="CI5_z (Concentration Index in the z-band): Similar to CI5_g, but it measures the light concentration using reddish light (z-band). It compares the brightness in a 5-pixel circle versus a smaller 1-pixel circle, helping us analyze how the light spreads in this different part of the spectrum.",
         )
         m5_g = st.text_input(
             "Magnitude m5_g",
             placeholder="Brightness in the g-band for the fifth magnitude point.",
+            help="m5_g (Magnitude in the g-band, 5-pixel aperture): This measures the cluster's brightness using an even larger 5-pixel-wide circle in the g-band. It shows how the brightness spreads across a larger area in greenish light.",
         )
         m5_z = st.text_input(
             "Magnitude m5_z",
             placeholder="Brightness in the z-band for the fifth magnitude point.",
+            help="m5_z (Magnitude in the z-band, 5-pixel aperture): This measures the brightness of the cluster through a 5-pixel-wide circle using the redder z-band light. It helps us understand how the brightness spreads in this color range.",
         )
 
     with col2:
